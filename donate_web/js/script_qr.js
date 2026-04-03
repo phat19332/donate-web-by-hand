@@ -159,11 +159,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Update Donator Marquee
         if (donatorList && donators) {
             donatorList.innerHTML = '';
-            // Duplicate list for seamless loop
-            const displayList = [...donators, ...donators]; 
-            displayList.forEach(donator => {
+            donators.forEach(donator => {
                 const item = document.createElement('span');
-                item.className = 'font-label text-[10px] text-on-surface-variant uppercase tracking-widest px-8 border-r border-primary/20';
+                item.className = 'font-label text-[10px] text-on-surface-variant uppercase tracking-widest px-8 border-r border-primary/20 whitespace-nowrap';
                 item.innerHTML = `<span class="text-primary">${donator.name}</span> - <span class="text-secondary">${donator.amount.toLocaleString()} VNĐ</span>`;
                 donatorList.appendChild(item);
             });
