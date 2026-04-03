@@ -1,0 +1,36 @@
+{
+  "total_collected": 2700000,
+  "goal": 20000000,
+  "donators": [
+    {
+      "name": "DLG_FAN_1",
+      "amount": 50000,
+      "message": "Good luck!",
+      "date": "2026-04-03"
+    },
+    {
+      "name": "Mạnh Thường Quân",
+      "amount": 500000,
+      "message": "Gánh tạ tiếp đi bro",
+      "date": "2026-04-03"
+    },
+    {
+      "name": "DLG_Hero",
+      "amount": 100000,
+      "message": "Keep it up!",
+      "date": "2026-04-03"
+    },
+    {
+      "name": "DLG_Hero",
+      "amount": 100000,
+      "message": "Keep it up!",
+      "date": "2026-04-03"
+    },
+    {
+      "name": "DLG_Hero",
+      "amount": 500000,
+      "message": "Keep it up!",
+      "date": "2026-04-03"
+    }
+  ]
+}
