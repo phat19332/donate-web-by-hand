@@ -35,23 +35,9 @@ const donationSchema = new mongoose.Schema({
 
 const Donation = mongoose.model('Donation', donationSchema);
 
-// One-time migration from db.json
-async function migrateData() {
-  try {
-    const count = await Donation.countDocuments();
-    if (count === 0 && fs.existsSync(path.join(__dirname, 'db.json'))) {
-      console.log('[SEED] Migrating data from db.json...');
-      const dbData = JSON.parse(fs.readFileSync(path.join(__dirname, 'db.json'), 'utf8'));
-      if (dbData.donators && dbData.donators.length > 0) {
-        await Donation.insertMany(dbData.donators);
-        console.log('[SEED] Migration complete!');
-      }
-    }
-  } catch (err) {
-    console.error('[SEED] Migration error:', err.message);
-  }
-}
-migrateData();
+// One-time migration from db.json (REMOVED to prevent 6% respawn bug)
+// async function migrateData() { ... }
+// migrateData();
 
 // ============================================================
 // MIDDLEWARE
